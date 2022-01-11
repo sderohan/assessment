@@ -7,6 +7,7 @@ import (
 
 func InitRoutes() *mux.Router {
 	route := mux.NewRouter()
-	route.HandleFunc("/get-words", controller.GetTopTenWords).Methods("POST")
+	v1 := route.PathPrefix("/v1").Subrouter()
+	v1.HandleFunc("/get-words", controller.GetTopTenWords).Methods("POST")
 	return route
 }
