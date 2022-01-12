@@ -1,4 +1,5 @@
 # assessment
+## Description: Take a input string and return the top ten words along with the count.
 ## To run the program follow the below steps
 ### 1. git clone https://github.com/sderohan/assessment.git
 ### 2. cd assessment
